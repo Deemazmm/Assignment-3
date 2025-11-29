@@ -1,0 +1,232 @@
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+  color: #052c52;
+  letter-spacing: -0.5px;
+}
+
+
+/* INTRO SECTION */
+.intro {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url("https://cdn.vectorstock.com/i/500p/74/72/falling-binary-matrix-background-vector-34057472.jpg");
+}
+
+.intro-content {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 3rem 4rem;
+  border-radius: 14px;
+  max-width: 760px;
+  margin: auto;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.18);
+}
+
+.intro-content p {
+  font-size: 1.1rem;
+}
+
+
+/* HEADER */
+header {
+  width: 100%;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+header .logo {
+  font-size: 1.2rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.header-greeting {
+  font-size: 0.95rem;
+  color: #111;
+  font-weight: 600;
+  align-self: center;
+  margin-left: auto;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+}
+
+.navbar a {
+  margin-left: 2rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #111;
+}
+
+
+/* ABOUT SECTION */
+.about {
+  display: flex;
+  align-items: flex-start;
+  gap: 3rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.about-details {
+  max-width: 650px;
+}
+
+.about-details h2 {
+  font-size: 1.9rem;
+  margin-bottom: 1.5rem;
+}
+
+.about-details p {
+  font-size: 1.15rem;
+  color: #444;
+  line-height: 1.85;
+}
+
+.profile-pic {
+  position: relative;
+}
+
+.profile-pic img {
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+
+/* SECTIONS (PROJECT + CONTACT) */
+.section {
+  background: #e9f4f8;
+  padding: 3rem 2.5rem;
+  border-radius: 14px;
+  margin: 2rem auto;
+  max-width: 1200px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.05);
+}
+
+
+/* PROJECTS */
+.project {
+  background: white;
+  border-radius: 16px;
+  padding: 1.5rem;
+  width: 240px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: 0.3s ease;
+}
+
+.project:hover {
+  transform: translateY(10px);
+  box-shadow: 0 8px 20px rgba(3, 81, 122, 0.2);
+}
+
+.project img {
+  height: 80px;
+  object-fit: contain;
+}
+
+.project-title {
+  font-size: 1rem;
+  margin: 0.4rem 0;
+  cursor: pointer;
+}
+
+.projects-container {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.project-title:hover {
+  color: #0077b6;
+}
+
+.project-details {
+  display: none;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.project.active .project-details {
+  display: block;
+}
+
+
+/* CONTACT FORM */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 30px;
+  background: #fff;
+  border-radius: 16px;
+  border: 1px solid #e5e9ec;
+  box-shadow: 0 10px 28px rgba(0,0,0,0.05);
+}
+
+form input,
+form textarea {
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid #d2d8dd;
+  margin-bottom: 1rem;
+}
+
+form input[type="submit"] {
+  background: #0077b6;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+form input[type="submit"]:hover {
+  background: #005f8c;
+}
+
+
+/* QUOTES */
+#quotes {
+  background: rgba(225, 238, 243, 0.85);
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 1200px;
+  margin: 2rem auto;
+}
+
+#quote-text {
+  font-size: 1.3rem;
+  font-style: italic;
+}
+
+#quote-author {
+  font-size: 1.1rem;
+  color: #0077b6;
+}
+
+.project-filter select {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
