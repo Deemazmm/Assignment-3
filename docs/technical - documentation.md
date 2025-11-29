@@ -42,7 +42,7 @@ Adds interactivity to project titles — clicking a title expands/closes details
 Checks if all fields are filled before submitting:
 
 4. **State Management**
-Stores the visitor’s name using localStorage so it appears on every visit.
+Stores the visitor’s name using localStorage so it appears on every visit with the greeting
 
 5. **Filtering Logic (Beginner / Advanced)**
 Detects the selected level from the dropdown and shows only projects matching that level.
